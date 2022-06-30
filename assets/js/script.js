@@ -30,13 +30,17 @@ var btn5pm = $('#5pmBtn');
 timeblocks = [text9am, text10am, text11am, text12pm, text1pm, text2pm, text3pm, text4pm, text5pm];
 
 var now = moment();
+// var now = {hour: function(){return 12;}}; // for testing purposes
 
 for (i=0; i < timeblocks.length; i++){
     if (now.hour() == timeblocks[i].data("hour")) {
         console.log("NOW" + timeblocks[i]);
+        timeblocks[i].addClass("present");
     } else if (now.hour() > timeblocks[i].data("hour")) {
         console.log("PAST" + timeblocks[i]);
+        timeblocks[i].addClass("past");
     } else if (now.hour() < timeblocks[i].data("hour")) {
         console.log("FUTURE" + timeblocks[i]);
+        timeblocks[i].addClass("future");
     }
 }

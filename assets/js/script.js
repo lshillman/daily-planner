@@ -44,3 +44,6 @@ for (i=0; i < timeblocks.length; i++){
         timeblocks[i].addClass("future");
     }
 }
+
+//TODO add click listeners to save buttons
+//TODO save user inputs to localstorage

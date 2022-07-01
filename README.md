@@ -1,8 +1,6 @@
 # Daily Planner
 
-## Subtitle
-
-[See it live](https://lshillman.github.io/daily-planner/)
+## [See it live](https://lshillman.github.io/daily-planner/)
 
 A lightweight planner for a single workday. Could I have used Google Tasks? Sure. Did I want to? Heck no! Why would I want to deny myself the opportunity to learn all about moment.js and bootstrap? Plus, of course, a refresher on localStorage.
 

@@ -1,42 +1,42 @@
-# Project Title
+# Daily Planner
 
 ## Subtitle
 
-[Deployed Link](https://lshillman.github.io/REPOSITORY-NAME/)
+[See it live](https://lshillman.github.io/daily-planner/)
 
-Description of project (also remember to add a blurb and the deployed link to the repo's "about" section)
+A lightweight planner for a single workday. Could I have used Google Tasks? Sure. Did I want to? Heck no! Why would I want to deny myself the opportunity to learn all about moment.js and bootstrap? Plus, of course, a refresher on localStorage.
 
-What I did
+Essentially this is a page that will let you store some text for each hour of a workday. It will format each block of time depending on whether it's in the past, present, or future.
 
 ## Technologies used:
 
 * HTML
 * CSS
 * JS
+* jQuery
+* moment.js
+* Bootstrap
 
 
 ## Code snippet
 
-The following is _ and it's interesting/significant because _
+Since I had save buttons separate from textareas, getting the textareas' values into localStorage involved some pretty gnarly dom traversal:
 
 ````javascript
-//JS goes here
+function saveToLocal(e) {
+    console.log(e.currentTarget.parentElement.previousElementSibling);
+    localStorage.setItem(e.currentTarget.parentElement.previousElementSibling.id, e.currentTarget.parentElement.previousElementSibling.value);
+}
 ````
 
-## UX wires/prototype
+## Colors! Responsiveness!
 
-Here are the layouts/functionality I was going for...
-![a screenshot of the live site](./assets/images/readme/design.jpg)
-
-## Screenshot of the live page and/or demo gif
-
-![a screenshot of the live site](./assets/images/readme/is-this-empathy.jpg)
+Truly, a tour de force. Check out this responsiveness. Marvel at the color coding.
 
 
 ## Credits
 
-List collaborators and roles, and resources consulted:
-https://www.w3.org/WAI/
+No help on this one, but I did make extensive use of the bootstrap, jQuery, and moment.js documentation.
 
 
 ## License
